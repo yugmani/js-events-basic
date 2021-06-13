@@ -1,54 +1,64 @@
 <html>
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
-</head>
-
-<body onload="pageload()">
-  <div class="container">
-    <h1>Events In JavaScript!</h1>
-    <div class="contents">
-      <div class="event1">
-        <h3>This is Onload Event</h3>
-        <!-- <div onload="pageload()"> </div> -->
-        <p> Refersh the web page!</p>
-      </div>
-      <div class="event2">
-        <h3>This is Onclick event
-        </h3>
-        <button onclick="myOnclick()">Click Me</button>
-      </div>
-      <div class="event3">
-        <h3>This is Onchange event
-        </h3>
-        <p>Select the Gender</p>
-        <select onchange="">
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Other" selected>Other </option>  
-          </select>
-      </div>
-      <div class="event4">
-        <h3>This is Onkeydown event
-        </h3>
-        <input id="keydown" onkeydown="myKeyDown()">
-      </div>
-      <div class="event4">
-        <h3>This is Mouseover event
-        </h3>
-        <div id="mouse-over" onmouseover="myMouseOver()" onmouseout="myMouseOut()">Mouse Over Here</div>
-      </div>
-
+  <body onload="pageload()">
+    <div class="event1">
+      <h3>This is Onload Event</h3>
+      <!-- <div onload="pageload()"> </div> -->
+      <h2 id="page-load">Page is Loading...</h2>
     </div>
-    <footer>
-      <h2>Source</h2>
-      <a href="https://www.c-sharpcorner.com/learn/learn-javascript/events-in-javascript">Events In JavaScripte</a>
-    </footer>
+    <div class="container">
+      <h1>Events In JavaScript!</h1>
+      <div class="contents">
+        <div class="event event2">
+          <h3>This is Onclick event</h3>
+          <button onclick="myOnclick()">Click Me</button>
+        </div>
+        <div class="event event3">
+          <h3>This is Onchange event</h3>
+          <p>Select the Gender</p>
+          <select onchange="">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other" selected>Other </option>
+          </select>
+        </div>
+        <div class="event event4">
+          <h3>This is Onkeydown event</h3>
+          <input
+            id="keydown"
+            onkeydown="myKeyDown()"
+            placeholder="Type here..."
+          />
+        </div>
+        <div class="event event4">
+          <h3>This is Mouseover event</h3>
+          <div
+            id="mouse-over"
+            onmouseover="myMouseOver()"
+            onmouseout="myMouseOut()"
+          >
+            Mouse Over Here
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div>
+          <h2>Note:</h2>
+          <p>Refersh the page to see onload event!</p>
+        </div>
+        <h2>Source</h2>
+        <a
+          href="https://www.c-sharpcorner.com/learn/learn-javascript/events-in-javascript"
+          >Events In JavaScript</a
+        >
+      </footer>
 
-    <script src="script.js"></script>
-  </div>
-</body>
-
+      <script src="script.js"></script>
+    </div>
+  </body>
 </html>
